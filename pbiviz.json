@@ -1,0 +1,27 @@
+{
+  "visual": {
+    "name": "bootstrap_mean",
+    "displayName": "Bootstrap",
+    "guid": "rtest32398254068144D6CA8C8B03B4C44DAFA",
+    "visualClassName": "Visual",
+    "version": "1.0.0",
+    "description": "Calculates bootstrap histograms for a weighted average measure",
+    "supportUrl": "",
+    "gitHubUrl": ""
+  },
+  "apiVersion": "2.3.0",
+  "author": {
+    "name": "Aleksander Kringstad",
+    "email": "alekskr89@gmail.com"
+  },
+  "assets": {
+    "icon": "assets/icon.png"
+  },
+  "externalJS": [
+    "node_modules/powerbi-visuals-utils-dataviewutils/lib/index.js"
+  ],
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": "dependencies.json",
+  "stringResources": []
+}

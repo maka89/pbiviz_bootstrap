@@ -1,0 +1,98 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Grouping",
+      "kind": "Grouping",
+      "name": "grouping"
+    },
+    {
+      "displayName": "Weight",
+      "kind": "Measure",
+      "name": "weight"
+    },
+    {
+      "displayName": "Values",
+      "kind": "Measure",
+      "name": "values"
+    }
+  ],
+  "dataViewMappings": [
+    {
+      "scriptResult": {
+        "dataInput": {
+          "table": {
+            "rows": {
+              "select": [
+                {"for": { "in": "grouping"}},
+                {"for": { "in": "weight"}},
+                {"for": { "in": "values"}}
+              ],
+              "dataReductionAlgorithm": {
+                "top": {}
+              }
+            }
+          }
+        },
+        "script": {
+          "scriptProviderDefault": "R",
+          "scriptOutputType": "html",
+          "source": {
+            "objectName": "rcv_script",
+            "propertyName": "source"
+          },
+          "provider": {
+            "objectName": "rcv_script",
+            "propertyName": "provider"
+          }
+        }
+      }
+    }
+  ],
+  "objects": {
+    "rcv_script": {
+      "properties": {
+        "provider": {
+          "type": {
+            "text": true
+          }
+        },
+        "source": {
+          "type": {
+            "scripting": {
+              "source": true
+            }
+          }
+        }
+      }
+    },
+    "settings_bootstrap_params": {
+      "displayName": "Bootstrap Settings",
+      "properties": {
+          "resamples": {
+              "displayName": "# Resamples",
+              "description": "Number of resamples. The more the merrier.",
+              "type": {
+                  "numeric": true
+                  }
+              },
+            "confint": {
+                "displayName": "Confidence interval %",
+                "description": "",
+                "type": {
+                    "numeric": true
+                    }
+                },
+                "numbins": {
+                  "displayName": "Number of bins",
+                  "description": "Number of histogram bins.",
+                  "type": {
+                      "numeric": true
+                      }
+                  }
+      }
+    }
+
+    
+  },
+  "suppressDefaultTitle": true
+}
