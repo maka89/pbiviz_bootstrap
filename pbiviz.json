@@ -6,13 +6,13 @@
     "visualClassName": "Visual",
     "version": "1.0.0",
     "description": "Calculates bootstrap histograms for a weighted average measure",
-    "supportUrl": "",
-    "gitHubUrl": ""
+    "supportUrl": "https://github.com/maka89/pbiviz_bootstrap",
+    "gitHubUrl": "https://github.com/maka89/pbiviz_bootstrap"
   },
   "apiVersion": "2.3.0",
   "author": {
     "name": "Aleksander Kringstad",
-    "email": "alekskr89@gmail.com"
+    "email": "support@akringstad.com"
   },
   "assets": {
     "icon": "assets/icon.png"

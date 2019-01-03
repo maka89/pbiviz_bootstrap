@@ -72,23 +72,37 @@
               "displayName": "# Resamples",
               "description": "Number of resamples. The more the merrier.",
               "type": {
+                "numeric": true
+                }
+              },
+            "confint": {
+              "displayName": "Confidence interval %",
+              "description": "",
+              "type": {
+                "numeric": true
+                }
+              },
+              "numbins": {
+                "displayName": "Number of bins",
+                "description": "Number of histogram bins.",
+                "type": {
                   "numeric": true
                   }
               },
-            "confint": {
-                "displayName": "Confidence interval %",
-                "description": "",
+              "tdist": {
+                "displayName": "Add T-dist",
+                "description": "Student's t distribution. Should be similar to bootstrap estimate for normally distributed 'Values'",
                 "type": {
-                    "numeric": true
-                    }
-                },
-                "numbins": {
-                  "displayName": "Number of bins",
-                  "description": "Number of histogram bins.",
-                  "type": {
-                      "numeric": true
-                      }
+                  "bool": true
                   }
+              },
+              "cumulative": {
+                "displayName": "Add PDF",
+                "description": "Adds cumulative probability functions of the bootstrap and Student's t estimates.",
+                "type": {
+                  "bool": true
+                  }
+                }
       }
     }
 
